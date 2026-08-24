@@ -15,7 +15,7 @@ jobs:
       - name: Unzip project
         run: unzip -o CyberLabToolkit.zip
 
-        - name: Remove missing app icon reference
+      - name: Remove missing app icon reference
         run: sed -i '/android:icon="@mipmap\/ic_launcher"/d' CyberLabToolkit/app/src/main/AndroidManifest.xml
 
       - name: Set up JDK 17
